@@ -1,3 +1,6 @@
 import pandas as pd
 df = pd.read_csv('payable_tracker.csv')
 print(df.head()) 
+total_expenses = df['Amount'].sum()
+print(total_expenses) 
+df[df['Needs Attention'] == 'Purchase over 1 year old'] 
